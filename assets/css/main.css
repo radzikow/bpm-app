@@ -1,0 +1,853 @@
+/* ------------------------- */
+/* Imports */
+/* ------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext");
+/* ------------------------- */
+/* Variables */
+/* ------------------------- */
+/* ------------------------- */
+/* Breakpoints */
+/* ------------------------- */
+/* ------------------------- */
+/* Reset styles */
+/* ------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------------- */
+/* Main styles */
+/* ------------------------- */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #2f2f2f;
+}
+
+body .page-wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .page-wrapper .login-form-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-wrapper .login-form-wrapper .login-form {
+  padding: 30px;
+  background: white;
+  border-radius: 3px;
+  min-width: 400px;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(204, 204, 204, 0.7);
+          box-shadow: 1px 1px 6px 1px rgba(204, 204, 204, 0.7);
+}
+
+body .page-wrapper .login-form-wrapper .login-form .form-title {
+  font-size: 2.3em;
+  text-align: center;
+  margin: 10px auto 40px auto;
+}
+
+body .page-wrapper .login-form-wrapper .login-form div {
+  position: relative;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+body .page-wrapper .login-form-wrapper .login-form div label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+body .page-wrapper .login-form-wrapper .login-form div input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  color: var(--main-text-color-gray);
+}
+
+body .page-wrapper .login-form-wrapper .login-form div input:focus {
+  background: #e6e6e6;
+}
+
+body .page-wrapper .login-form-wrapper .login-form div .error-msg {
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  right: 0;
+}
+
+body .page-wrapper .login-form-wrapper .login-form .login-btn-wrapper {
+  text-align: center;
+}
+
+body .page-wrapper .login-form-wrapper .login-form .login-btn-wrapper .login-btn {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 12px 8px;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(204, 204, 204, 0.7);
+          box-shadow: 1px 1px 6px 1px rgba(204, 204, 204, 0.7);
+  color: var(--main-text-color-gray);
+  background: var(--main-text-color-green);
+  opacity: 0.9;
+  color: white;
+  text-transform: uppercase;
+}
+
+body .page-wrapper .login-form-wrapper .login-form .login-btn-wrapper .login-btn:hover {
+  opacity: 1;
+  -webkit-transition: 0.4;
+  transition: 0.4;
+}
+
+body .page-wrapper .login-form-wrapper .login-form p {
+  text-align: center;
+  font-size: 14px;
+}
+
+body .page-wrapper .login-form-wrapper .login-form p a {
+  text-decoration: none;
+  color: var(--main-text-color-green);
+}
+
+body .page-wrapper .login-form-wrapper .login-form p a:hover {
+  text-decoration: underline;
+}
+
+body .page-wrapper .sidebar {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #1f1f1f;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  min-width: 280px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+}
+
+body .page-wrapper .sidebar .logo {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-wrapper .sidebar .logo a {
+  text-decoration: none;
+}
+
+body .page-wrapper .sidebar .logo a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+body .page-wrapper .sidebar .logo a img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .page-wrapper .sidebar .logo a h1 {
+  color: #fafafa;
+  font-size: 2.5em;
+  font-weight: 400;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .page-wrapper .sidebar .logo a h1 span:nth-child(1) {
+  color: #52bcd8;
+}
+
+body .page-wrapper .sidebar .logo a h1 span:nth-child(2) {
+  color: inherit;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+body .page-wrapper .sidebar nav {
+  width: 100%;
+}
+
+body .page-wrapper .sidebar nav ul {
+  color: #d4d4d4;
+}
+
+body .page-wrapper .sidebar nav ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body .page-wrapper .sidebar nav ul a:hover > li {
+  background-color: #161616;
+}
+
+body .page-wrapper .sidebar nav ul a:hover > li > span {
+  color: #52bcd8;
+}
+
+body .page-wrapper .sidebar nav ul a:hover > li > i {
+  color: #52bcd8;
+}
+
+body .page-wrapper .sidebar nav ul a li {
+  width: 100%;
+  padding: 20px 15px 20px 25px;
+  border-radius: 1px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .page-wrapper .sidebar nav ul a li i {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1.3em;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .page-wrapper .sidebar nav ul a li span {
+  position: absolute;
+  left: 65px;
+  opacity: 1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+body .page-wrapper .sidebar nav ul a .current-page {
+  color: #52bcd8;
+  background-color: #161616;
+}
+
+body .page-wrapper .content {
+  min-height: 100vh;
+  padding: 2em 2em 3em 2em;
+  width: 100%;
+  background-color: #52bcd812;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .page-wrapper .content h1 {
+  font-size: 3em;
+  color: #52bcd8;
+  text-transform: uppercase;
+  margin: 1em 0 1.5em 0;
+  font-weight: bold;
+}
+
+body .page-wrapper .content .dashboard-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  text-transform: initial;
+  width: 100%;
+  margin-top: 200px;
+}
+
+body .page-wrapper .content .content-row h2 {
+  font-size: 1.1em;
+  color: #6b7078;
+  margin: 3em 0 1.5em 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body .page-wrapper .content .content-row table {
+  width: 100%;
+}
+
+body .page-wrapper .content .content-row table thead tr {
+  margin-bottom: 10px;
+}
+
+body .page-wrapper .content .content-row table thead tr th {
+  color: #6b7078;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+body .page-wrapper .content .content-row table tbody:before {
+  line-height: 1.2em;
+  content: "\200C";
+  display: block;
+}
+
+body .page-wrapper .content .content-row table tbody tr {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 4px solid transparent;
+}
+
+body .page-wrapper .content .content-row table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+body .page-wrapper .content .content-row table tbody tr:nth-child(odd) {
+  background-color: #fefefe;
+}
+
+body .page-wrapper .content .content-row table tbody tr:hover {
+  border-bottom: 4px solid #52bcd8;
+}
+
+body .page-wrapper .content .content-row table tbody tr:hover > .contractor-action-btn {
+  color: #52bcd8;
+}
+
+body .page-wrapper .content .content-row table tbody tr:hover > .update-invoice-btn {
+  color: #52bcd8;
+}
+
+body .page-wrapper .content .content-row table tbody tr td {
+  font-size: 1em;
+  line-height: 1.2em;
+  padding: 16px 10px;
+  position: relative;
+}
+
+body .page-wrapper .content .content-row table tbody tr .net-prices {
+  background-color: inherit;
+  max-width: 120px;
+}
+
+body .page-wrapper .content .content-row table tbody tr .net-prices:hover {
+  background-color: rgba(142, 255, 176, 0.774);
+}
+
+body .page-wrapper .content .content-row table tbody tr .net-prices input {
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+body .page-wrapper .content .content-row table tbody tr .net-prices input:focus {
+  color: rgba(216, 30, 30, 0.918);
+}
+
+body .page-wrapper .content .content-row table tbody tr .quantities {
+  background-color: inherit;
+  max-width: 80px;
+}
+
+body .page-wrapper .content .content-row table tbody tr .quantities:hover {
+  background-color: rgba(142, 255, 176, 0.774);
+}
+
+body .page-wrapper .content .content-row table tbody tr .quantities input {
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+body .page-wrapper .content .content-row table tbody tr .quantities input:focus {
+  color: rgba(216, 30, 30, 0.918);
+}
+
+body .page-wrapper .content .content-row table tbody tr .update-invoice .update-invoice-btn {
+  background: transparent;
+  border: none;
+  color: #52bcd8;
+}
+
+body .page-wrapper .content .content-row table tbody tr .vat-rates:hover {
+  background-color: rgba(142, 255, 176, 0.774);
+}
+
+body .page-wrapper .content .content-row table tbody tr .vat-rates select {
+  border: none;
+  background-color: inherit;
+  -webkit-appearance: none;
+}
+
+body .page-wrapper .content .content-row table tbody tr .vat-rates select:focus {
+  color: rgba(216, 30, 30, 0.918);
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn {
+  cursor: pointer;
+  text-align: center;
+  color: #6b7078;
+  padding: 16px 8px;
+  max-width: 30px;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn:hover > .contractor-action-div {
+  display: block;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn .contractor-action-div {
+  background-color: #52bcd8;
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  top: 53px;
+  display: none;
+  z-index: 100;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn .contractor-action-div ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn .contractor-action-div ul a li {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px 14px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn .contractor-action-div ul a li:hover {
+  opacity: 0.8;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn .contractor-action-div ul a li i {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+body .page-wrapper .content .content-row table tbody tr .contractor-action-btn .contractor-action-div ul a li span {
+  position: absolute;
+  left: 40px;
+  opacity: 1;
+}
+
+body .page-wrapper .content .content-row .action-btn-wrapper {
+  margin: 0 0 1em 0;
+}
+
+body .page-wrapper .content .content-row .action-btn-wrapper .action-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 12px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #52bcd8;
+  color: white;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body .page-wrapper .content .content-row .action-btn-wrapper .action-btn:hover {
+  opacity: 1;
+}
+
+body .page-wrapper .content .content-row form div {
+  position: relative;
+  margin: 10px 0;
+}
+
+body .page-wrapper .content .content-row form div .label {
+  color: #6b7078;
+}
+
+body .page-wrapper .content .content-row form div .input {
+  display: block;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #dfdfdf;
+  padding: 8px;
+  margin: 10px 0;
+  color: #2f2f2f;
+}
+
+body .page-wrapper .content .content-row form div .input:focus {
+  border: 1px solid #52bcd8;
+  background-color: #52bcd812;
+}
+
+body .page-wrapper .content .content-row form div .error-msg {
+  font-size: 0.9em;
+  color: rgba(216, 30, 30, 0.918);
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+}
+
+body .page-wrapper .content .content-row .select-wrapper {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1.2em;
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+}
+
+body .page-wrapper .content .content-row .select-wrapper .select-label {
+  padding: 0 0 0.7em 0;
+}
+
+body .page-wrapper .content .content-row .select-wrapper select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #52bcd812;
+}
+
+body .page-wrapper .content .content-row .list-wrapper {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1.2em;
+  background-color: white;
+  overflow: hidden;
+}
+
+body .page-wrapper .content .content-row .list-wrapper ul li {
+  padding: 0.7em 0;
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+
+body .page-wrapper .content .content-row .settings-wrapper {
+  padding: 1.2em;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+body .page-wrapper .content .content-row .settings-wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-wrapper .content .content-row .settings-wrapper div .colorPickerInput {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  width: 36px;
+  background: none;
+  height: 26px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+body .page-wrapper .content .content-row .settings-wrapper div p {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+body .page-wrapper .content .content-row .settings-wrapper .colorBtn {
+  margin-top: 1em;
+  margin-right: 0.5em;
+  background-color: white;
+  border: 1px solid #6b7078;
+  padding: 8px 12px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body .page-wrapper .content .content-row .settings-wrapper .colorBtn:hover {
+  background-color: #52bcd812;
+}
+
+body .page-wrapper .content .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .page-wrapper .content .top-nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.7em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+body .page-wrapper .content .top-nav div p {
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 0.7em;
+  color: #6b7078;
+  text-transform: uppercase;
+}
+
+body .page-wrapper .content .top-nav div i {
+  margin-left: 5px;
+  color: #52bcd8;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn {
+  position: relative;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn:hover > .menu-options-div {
+  display: block !important;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn .menu-options-div {
+  background-color: #52bcd8;
+  font-size: 0.9em;
+  display: none;
+  position: absolute;
+  top: 42px;
+  right: 10px;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn .menu-options-div ul a {
+  color: white;
+  text-decoration: none;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn .menu-options-div ul a:hover > li {
+  opacity: 0.8;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn .menu-options-div ul a li {
+  min-width: 10;
+  padding: 12px 14px;
+  opacity: 1;
+  border-bottom: 1px solid #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn .menu-options-div ul a li span {
+  margin-left: 7px;
+  display: inline-block;
+}
+
+body .page-wrapper .content .top-nav .menu-options-btn .menu-options-div ul a li i {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+body .page-wrapper .content .top-nav .bars-wrapper {
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  padding-left: 0;
+  cursor: context-menu;
+}
+
+body .page-wrapper .content .top-nav .bars-wrapper .bars {
+  font-size: 2.1em;
+  cursor: pointer;
+}
+
+body .page-wrapper .content .top-nav .question-mark {
+  background-color: #ffbf49;
+  width: 36px;
+  height: 40px;
+  text-align: center;
+  opacity: 0.8;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body .page-wrapper .content .top-nav .question-mark:hover {
+  opacity: 1;
+}
+
+body .page-wrapper .content .top-nav .question-mark .question-mark-sign {
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+}
+
+body .page-wrapper .content .top-nav .info-div {
+  padding: 30px;
+  background-color: #ffbf49;
+  position: absolute;
+  max-width: 300px;
+  margin-left: 0;
+  text-align: center;
+  top: 60px;
+  display: none;
+  z-index: 200;
+  cursor: default;
+}
+
+body .page-wrapper .content .top-nav .info-div h2 {
+  color: white;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+body .page-wrapper .content .top-nav .info-div i {
+  color: white;
+  font-size: 3em;
+}
+
+body .page-wrapper .content .top-nav .info-div p {
+  color: white;
+  line-height: 1.6em;
+  font-size: 0.9em;
+  text-transform: none;
+  margin: 10px auto;
+  display: block;
+}
+
+/* ------------------------- */
+/* Additional styles */
+/* ------------------------- */
+.contractor-details {
+  background-color: white;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.2);
+  padding: 0.8em;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contractor-details:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 4px solid transparent !important;
+}
+
+.contractor-details td {
+  padding: 10px;
+}
+
+.contractor-details td div p {
+  display: block;
+  padding: 4px 0;
+}
+
+.green-bg {
+  background-color: rgba(142, 255, 176, 0.774) !important;
+}
+
+.toggle-sidebar {
+  width: 80px !important;
+  min-width: 80px !important;
+}
+
+.toggle-sidebar-text {
+  opacity: 0 !important;
+}
+
+.toggle-logo {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.toggle-content-section {
+  width: 100% !important;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.show-borders {
+  border-bottom: 4px solid #52bcd8 !important;
+}
+
+.blue-bg {
+  background-color: #52bcd8 !important;
+  color: white !important;
+}
+
+.highlight-row {
+  background-color: rgba(142, 255, 176, 0.774) !important;
+}
+/*# sourceMappingURL=main.css.map */
